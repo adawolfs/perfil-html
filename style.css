@@ -1,0 +1,41 @@
+html,
+body {
+    color: white;
+    background-color: indigo;
+}
+
+
+/* Menu */
+
+nav {
+    background-color: mediumpurple;
+}
+
+header {
+    background-color: #8C0476;
+}
+
+
+/* Parte lateral izquierda */
+
+aside {
+    background-color: #8C0476;
+}
+
+
+/* Contenido principal */
+
+section {
+    background-color: #8C0476;
+}
+
+article {
+    background-color: purple;
+}
+
+
+/* Pie de página */
+
+footer {
+    background-color: royalblue;
+}
