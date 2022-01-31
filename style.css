@@ -4,14 +4,25 @@ body {
     background-color: indigo;
 }
 
+body {
+    /* Implementacion de Grid */
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 80%;
+}
+
 
 /* Menu */
 
 nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: mediumpurple;
 }
 
 header {
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: #8C0476;
 }
 
@@ -20,6 +31,8 @@ header {
 
 aside {
     background-color: #8C0476;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 
@@ -38,4 +51,6 @@ article {
 
 footer {
     background-color: royalblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
