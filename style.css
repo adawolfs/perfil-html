@@ -54,6 +54,8 @@ aside img {
 
 aside article {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 aside article h3 {
@@ -64,6 +66,37 @@ aside article ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+aside article ul li {
+    display: flex;
+}
+
+aside article ul li i {
+    text-align: center;
+    width: 30px;
+}
+
+/* Una clase de css */
+.tech-rank {
+    margin-right: 30px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Una elemento dentro de una clase */
+.tech-rank i {
+    width: 18px;
+}
+
+/* Un tipo de elemento con una clase especifica */
+.tech-rank i.check {
+    color: #292929;
+}
+
+.tech-rank i.uncheck {
+    color: rgba(211, 211, 211, 0.424);
 }
 
 /* Contenido principal */
