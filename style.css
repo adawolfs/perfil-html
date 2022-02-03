@@ -1,12 +1,12 @@
 html,
 body {
-    color: white;
-    background-color: indigo;
+    color: rgb(241, 241, 241);
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
 body {
     /* Implementacion de Grid */
+    background-color: #060F18;
     display: grid;
     height: 100%;
     grid-template-columns: 20% 80%;
@@ -33,7 +33,7 @@ nav div {
 }
 
 nav div a {
-    color: white;
+    color: rgb(241, 241, 241);
 }
 
 header {
@@ -50,7 +50,6 @@ header a-scene {
 /* Parte lateral izquierda */
 
 aside {
-    background-color: #8C0476;
     margin: 20px 10px 20px 0;
     padding: 0 10px;
     grid-row-start: 3;
@@ -101,17 +100,16 @@ aside article ul li i {
 
 /* Un tipo de elemento con una clase especifica */
 .tech-rank i.check {
-    color: #292929;
+    color: #707070;
 }
 
 .tech-rank i.uncheck {
-    color: rgba(211, 211, 211, 0.424);
+    color: rgba(211, 211, 211);
 }
 
 /* Contenido principal */
 
 section {
-    background-color: #8C0476;
     margin: 20px 0px;
     overflow: hidden;
 }
@@ -135,14 +133,13 @@ section article h2 {
 }
 
 article {
-    background-color: purple;
+    background-color: rgba(68, 68, 68, 0.15);
 }
 
 
 /* Pie de página */
 
 footer {
-    background-color: indigo;
     grid-column-start: 1;
     grid-column-end: 3;
     height: 50px;
