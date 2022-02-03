@@ -2,6 +2,7 @@ html,
 body {
     color: white;
     background-color: indigo;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 body {
@@ -17,18 +18,21 @@ body {
 nav {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: mediumpurple;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
 nav div {
-    border: 1px solid white;
+    border: 1px solid white;    
     margin: 10px;
     padding: 10px;
     width: 100px;
     text-align: center;
+}
+
+nav div a {
+    color: white;
 }
 
 header {
@@ -43,13 +47,15 @@ header {
 aside {
     background-color: #8C0476;
     margin-right: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
 aside img {
     width: 100%;
-    border-radius: 100px;
+    border-radius: 1000px;
 }
 
 aside article {
@@ -103,6 +109,23 @@ aside article ul li i {
 
 section {
     background-color: #8C0476;
+    margin: 20px;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+section article h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+section article h2 {
+    font-size: medium;
+    margin: 5px 0;
 }
 
 article {
@@ -113,7 +136,12 @@ article {
 /* Pie de página */
 
 footer {
-    background-color: royalblue;
+    background-color: indigo;
     grid-column-start: 1;
     grid-column-end: 3;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
