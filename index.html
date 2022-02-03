@@ -20,7 +20,18 @@
         <a-scene background="color: #8C0476" embedded debug>
             <a-assets>
                 <img id="perfil" src="images/hackerman.jpg">
+                <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/https://i.imgur.com/WqlqEkq.jpg"
+                    crossorigin="anonymous" />
+                <img id="grid" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png"
+                    crossorigin="anonymous">
             </a-assets>
+
+            
+            <a-entity position="0 0 0" geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+                material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
+            </a-entity>
+
+            <a-sky src="#sky" rotation="0 -90 0"></a-sky>
 
             <a-circle material="side: double;" src="#perfil" radius="4" position="-15 4 -10" rotation="0 0 0">
             </a-circle>
